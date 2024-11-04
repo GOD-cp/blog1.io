@@ -1,3 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: #fff;
+    padding: 20px 0;
+    
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+   
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #333;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+}
+
+nav ul li a:hover {
+    color: #831c1c;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.aspect-ratio-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 の比率 (9 / 16 * 100 = 56.25%) */
+}
+
+.aspect-ratio-container .blog-posts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    height: 250px; /* 固定の高さを指定 */
+    overflow: auto; /* コンテンツが多い場合はスクロール */
+    margin: 0 auto; /* 自動で中央揃え */
+}
+
+article a {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    height: 800px; /* 固定の高さを指定 */
+    margin: 0 auto; /* 自動で中央揃え */
+}
+
+
+article p {
+    
+   
+    margin-bottom: 0.5cm; /* 段落の下に1センチの余白 */
+}
+    
+.content {
+    background-color: #fff; /* 背景を白に設定 */
+    padding: 20px; /* 内側に余白を追加 */
+    margin-bottom: 20px; /* 下に余白を追加 */
+    border-radius: 8px; /* 角を少し丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスに影を追加 */
+    max-width: 800px;
+    text-align: center; /* 画像とテキストの中央揃え */
+    margin: 0 auto; /* 中央揃えのために自動マージン */
+}
+
+
+article h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.read-more {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ボタンのスタイル */
+.button {
+    background-color: #000000;  
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+.image-container {
+   width: 100%;
+    max-width: 800px;
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-container1 {
+    width: 100%;
+     max-width: 800px;
+     position: relative;
+     display: inline-block;
+     margin: 20px 120px;
+     text-align: center;
+ }
+ .image-container2 {
+    width: 100%;
+     max-width: 800px;
+     position: absolute;
+     right:0px;
+     bottom:10px;
+     display: inline-block;
+     margin: 20px 100px;
+     text-align: center;
+ }
+
+.research-image {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    font-size: 1.2rem;
+    text-align: left;
+    text-indent: 1.2em; /* インデントの幅を設定 */
+    color: #333;
+    margin-top: 10px;
+    padding: 0 10px; /* 必要に応じて左右に余白を追加 */
+    box-sizing: border-box;
+    word-wrap: break-word; /* 文字が長くなる場合に折り返す */
+
+}
+
+.image-captiona {
+    font-size: 1.2rem;
+    text-align: left;
+    
+    color: #333;
+    margin-top: 10px;
+    padding: 0 10px; /* 必要に応じて左右に余白を追加 */
+    box-sizing: border-box;
+    word-wrap: break-word; /* 文字が長くなる場合に折り返す */
+
+}
 
 .image-captiona1 {
     font-size: 1.2rem;
@@ -361,3 +580,8 @@ img {
     background-color: darkred;
   }
   
+
+
+  
+
+
