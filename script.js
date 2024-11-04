@@ -34,3 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+// ×ボタンをクリックしたら画像を消す機能
+document.querySelectorAll('.close-btn11').forEach(function(btn11) {
+    btn11.addEventListener('click', function(e) {
+        e.stopPropagation(); // クリックイベントが親要素に伝播しないようにする
+        var image = this.parentElement;
+        image.style.display = 'none';
+    });
+});
